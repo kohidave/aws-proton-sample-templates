@@ -7,6 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
+    - name: Get changed files
+      id: changed-files
+      uses: tj-actions/changed-files@v29.0.0
+      with:
+        separator: ","
     - name: Run action
       # Put your action repo here
       uses: kohidave/proton-jinja-template-validation-action@main
+      with: 
+        changed_files: "${{steps.changed-files.outputs.all_changed_files}}"
+      
