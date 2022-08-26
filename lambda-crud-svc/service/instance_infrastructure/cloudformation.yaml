@@ -35,7 +35,7 @@ Resources:
       Handler: {{service_instance.inputs.lambda_handler}}
       CodeUri: {{service_instance.inputs.code_uri}}
       {% else %}
-      Handler: index.handler
+      Handlerooney: index.handler
       InlineCode: |
         exports.handler = async (event, context) => {
           try {
