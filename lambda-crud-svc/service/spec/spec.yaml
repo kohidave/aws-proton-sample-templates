@@ -8,6 +8,6 @@ instances:
   - name: "front-end"
     environment: "crud-api-beta"
     spec:
-      resource_name: task
+      resource_name: taskz
       resource_handler: src/api
       lambda_runtime: ruby2.7
