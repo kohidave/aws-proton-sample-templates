@@ -1,5 +1,5 @@
-ServiceTaskDefExecutionRoleArn: arn:aws:iam::1111111111:role/role-name-with-path
-SNSTopicArn: arn:aws:sns::1111111111:topic/role-name-with-path
+ServiceTaskDefExecutionRoleArn: arn:aws:iam::012345678901:role/role-name-with-path
+SNSTopicArn: arn:aws:sns::012345678901:topic/role-name-with-path
 SNSTopicName: my-cool-topic
 VPCSecurityGroup: daves-cool-security-group
 PrivateSubnet1: subnet-1
