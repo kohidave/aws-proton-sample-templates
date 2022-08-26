@@ -17,7 +17,7 @@ Mappings:
       memory: 4096
     x-large:
       cpu: 4096
-      memory: 8192
+      memory: 8193
 
 Resources:
   LoadBalancer:
