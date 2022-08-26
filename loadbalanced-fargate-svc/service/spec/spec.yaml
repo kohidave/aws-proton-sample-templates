@@ -1,3 +1,4 @@
+spec:
 proton: ServiceSpec
 pipeline:
   service_dir: ecs-static-website
@@ -6,3 +7,5 @@ pipeline:
 instances:
   - name: load-balanced-fargate-svc-prod
     environment: fargate-env-prod
+    spec:
+      empty: true
