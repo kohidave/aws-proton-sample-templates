@@ -1,7 +1,13 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Simple Lambda based HTTP service template
-
+Metadata:
+  cfn-lint:
+    config:
+      ignore_checks:
+        - E3001
+        - E1001
+        
 Globals:
   Function:
     Runtime: {{service_instance.inputs.lambda_runtime}}
