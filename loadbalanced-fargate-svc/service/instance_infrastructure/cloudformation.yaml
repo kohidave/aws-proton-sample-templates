@@ -168,7 +168,7 @@ Resources:
             - Name: BACKEND_URL
               Value: "{{service_instance.inputs.backendurl}}"
       Cpu: !FindInMap [TaskSize, {{service_instance.inputs.task_size}}, cpu]
-      ExecutionRoleArn: '{{environment.outputs.ServiceTaskDefExecutionRoleArn}}'
+      ExecutionRoleArn: {{environment.outputs.ServiceTaskDefExecutionRoleArn}}
       Family: '{{service.name}}_{{service_instance.name}}'
       Memory: !FindInMap [TaskSize, {{service_instance.inputs.task_size}}, memory]
       NetworkMode: awsvpc
