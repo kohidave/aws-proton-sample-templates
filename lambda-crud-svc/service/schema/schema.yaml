@@ -48,7 +48,12 @@ schema:
           description: "Subnet type for your function"
           enum: ["public", "private"]
           default: "public"
-
+        tracing_status:
+          title: "Tracing Status"
+          type: string
+          description: "x-ray tracing status"
+          enum: ["Active", "Inactive"]
+          default: "Active"
     PipelineInputs:
       type: object
       description: "Pipeline input properties"

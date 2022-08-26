@@ -11,3 +11,4 @@ instances:
       resource_name: task
       resource_handler: src/api
       lambda_runtime: ruby2.7
+      tracing_status: Active
