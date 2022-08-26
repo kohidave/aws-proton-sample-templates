@@ -4,9 +4,8 @@ Description: Simple Lambda based HTTP service template
 Metadata:
   cfn-lint:
     config:
-      ignore_checks:
-        - E3001
-        - E1001
+      regions:
+        - us-east-1    
         
 Globals:
   Function:
