@@ -167,6 +167,8 @@ Resources:
               Value: "{{environment.outputs.SNSRegion}}"
             - Name: BACKEND_URL
               Value: "{{service_instance.inputs.backendurl}}"
+              Name: FAVORITE_WORD
+              Value: "hey buddy"
       Cpu: !FindInMap [TaskSize, {{service_instance.inputs.task_size}}, cpu]
       ExecutionRoleArn: {{environment.outputs.ServiceTaskDefExecutionRoleArn}}
       Family: '{{service.name}}_{{service_instance.name}}'
