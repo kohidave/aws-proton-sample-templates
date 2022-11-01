@@ -41,7 +41,7 @@ Resources:
   LoadBalancerSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
-      GroupDescription: Automatically created Security Group for Application LB.
+      GroupDescription: Automatically created Security Group for Application LB!
       SecurityGroupIngress:
         - CidrIp: 0.0.0.0/0
           Description: Allow from anyone on port 80
