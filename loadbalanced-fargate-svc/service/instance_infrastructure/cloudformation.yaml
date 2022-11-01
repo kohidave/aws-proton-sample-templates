@@ -44,7 +44,7 @@ Resources:
       GroupDescription: Automatically created Security Group for Application LB.
       SecurityGroupIngress:
         - CidrIp: 0.0.0.0/0
-          Description: Allow from anyone on port 80
+          Description: Allow from anyone on port 800
           FromPort: 80
           IpProtocol: tcp
           ToPort: 80
