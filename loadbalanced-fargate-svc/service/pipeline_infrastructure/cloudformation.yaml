@@ -108,6 +108,11 @@ Resources:
 {% for service_instance in service_instances %}
   Deploy{{loop.index}}Project:
     Type: AWS::CodeBuild::Project
+    Metadata:
+      cfn-lint:
+        config:
+          ignore_checks:
+            - E3001    
     Properties:
       Artifacts:
         Type: CODEPIPELINE
