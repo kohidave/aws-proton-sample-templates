@@ -7,7 +7,7 @@ Metadata:
         - E3001
 Resources:
   ECRRepo:
-    Type: AWS::ECR::Repository
+    Type: AWS::ECR::Smaepository
     DeletionPolicy: Retain
     Properties:
       # This policy allows environment accounts to get the image from ECRRepo in the management account
