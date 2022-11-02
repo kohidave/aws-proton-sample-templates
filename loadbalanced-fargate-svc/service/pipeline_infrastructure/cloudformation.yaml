@@ -1,10 +1,9 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Pipeline
+
 Metadata:
-  cfn-lint:
-    config:
-      regions:
-        - us-east-1
-      ignore_checks:
-        - E3001
+  cfn-lint: { config: { ignore_checks: [W9004, W9003, W9002, W9006, E3001] }}
+
 Resources:
   ECRRepo:
     Type: AWS::ECR::Repository
@@ -109,6 +108,11 @@ Resources:
 {% for service_instance in service_instances %}
   Deploy{{loop.index}}Project:
     Type: AWS::CodeBuild::Project
+    Metadata:
+      cfn-lint:
+        config:
+          ignore_checks:
+            - E3001    
     Properties:
       Artifacts:
         Type: CODEPIPELINE
