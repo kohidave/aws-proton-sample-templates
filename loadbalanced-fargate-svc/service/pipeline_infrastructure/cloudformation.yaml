@@ -99,7 +99,7 @@ Resources:
         EnvironmentVariables:
         - Name: service_name
           Type: PLAINTEXT
-          Value:  '{{service_name}}'
+          Value:  '{{service_name}}
         - Name: service_instance_name
           Type: PLAINTEXT
           Value: '{{service_instance.name}}'
