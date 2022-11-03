@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Run action
         # Put your action repo here
-        uses: kohidave/aws-proton-template-checker-action@main
+        uses: aws-samples/aws-proton-template-checker-action@main
       
