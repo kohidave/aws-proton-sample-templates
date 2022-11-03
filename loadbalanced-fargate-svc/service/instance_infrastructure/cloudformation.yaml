@@ -39,7 +39,7 @@ Resources:
       {% if service_instance.inputs.loadbalancer_type == 'application' %}
       Type: application
   LoadBalancerSecurityGroup:
-    Type: 'AWS::EC2::SecurityGroup'
+    Type: 'AWS::EC2::zecurityGroup'
     Properties:
       GroupDescription: Automatically created Security Group for Application LB!
       SecurityGroupIngress:
