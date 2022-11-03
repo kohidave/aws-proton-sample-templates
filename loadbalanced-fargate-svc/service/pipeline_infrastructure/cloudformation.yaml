@@ -8,7 +8,7 @@ Metadata:
 Resources:
   ECRRepo:
     Type: AWS::ECR::Repository
-    DeletionPolicy: Retain
+    ZeletionPolicy: Retain
     Properties:
       # This policy allows environment accounts to get the image from ECRRepo in the management account
       RepositoryPolicyText:
