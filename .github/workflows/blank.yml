@@ -16,4 +16,7 @@ jobs:
           separator: ","    
       - name: Run action
         uses: aws-samples/aws-proton-template-checker-action@main
+        with:
+          changed_files: "${{steps.changed-files.outputs.all_changed_files}}"
+          
       
